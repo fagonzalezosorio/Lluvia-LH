@@ -103,15 +103,15 @@ col1.markdown("         ")
 col2.markdown("         ")
 
 
-df2 = pd.pivot_table(df,index = 'Año', columns='mes_nombre', values='mm', aggfunc='sum', fill_value=0)
+# df2 = pd.pivot_table(df,index = 'Año', columns='mes_nombre', values='mm', aggfunc='sum', fill_value=0)
 
-order_cols = sorted([nombre_mes[col] for col in df2.columns])
-df2 = df2[[mes_nombre[col] for col in order_cols]]
+# order_cols = sorted([nombre_mes[col] for col in df2.columns])
+# df2 = df2[[mes_nombre[col] for col in order_cols]]
 
-df2.loc['Total'] = df2.sum(numeric_only=True)
-df2['Total'] = df2.sum(axis=1, numeric_only=True)
+# df2.loc['Total'] = df2.sum(numeric_only=True)
+# df2['Total'] = df2.sum(axis=1, numeric_only=True)
 
-col1.dataframe(df2.replace(0,""))
+# col1.dataframe(df2.replace(0,""))
 col1.write('Fuente: Casa')
 
 ## historico conaf

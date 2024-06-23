@@ -4,4 +4,3 @@ openpyxl
 plotly
 numpy
 matplotlib
-Pillow
